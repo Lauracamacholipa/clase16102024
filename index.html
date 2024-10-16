@@ -5,18 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            margin:0;
+        }
         .contenedor-flexible
         {
             display:flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap:wrap-reverse;
+        }
+        .uno, .cinco{
+            background-color: red;
+            width: 150px;
+            height: 50px;
+            color: white;
+        }
+        .dos, .seis{
+            background-color: orange;
+            width: 150px;
+            height: 150px;
+            color: white;
+        }
+        .tres, .siete{
+            background-color: violet;
+            width: 150px;
+            height: 250px;
+            color: white;
+        }
+        .cuatro{
+            background-color: blue;
+            width: 150px;
+            height: 200px;
+            color: white;
         }
     </style>
 </head>
 <body>
     <div class="contenedor-flexible">
-        <div class="elemento-flexible">Elemento 1</div>
-        <div class="elemento-flexible">Elemento 2</div>
-        <div class="elemento-flexible">Elemento 3</div>
-        <div class="elemento-flexible">Elemento 4</div>
+        <div class="elemento-flexible uno">Elemento 1</div>
+        <div class="elemento-flexible dos">Elemento 2</div>
+        <div class="elemento-flexible tres">Elemento 3</div>
+        <div class="elemento-flexible cuatro">Elemento 4</div>
+        <div class="elemento-flexible cinco">Elemento 5</div>
+        <div class="elemento-flexible seis">Elemento 6</div>
+        <div class="elemento-flexible siete">Elemento 7</div>
     </div>
+
+    <!--<div class="contenedor-flexible2">
+        <div class="elemento-flexible uno2">Elemento 2.1</div>
+        <div class="elemento-flexible dos2">Elemento 2.2</div>
+        <div class="elemento-flexible tres2">Elemento 2.3</div>
+        <div class="elemento-flexible cuatro2">Elemento 2.4</div>
+    </div>-->
 </body>
 </html>
